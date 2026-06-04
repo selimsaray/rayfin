@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎭 Random Joke Generator</h1>
+      <p>Get your daily laugh with our amazing joke generator!</p>
+    </div>
+
+    <div class="controls">
+      <button id="generateBtn" class="btn btn-primary">Get Random Joke</button>
+      
+      <div class="category-filter">
+        <label for="categorySelect">Choose Category:</label>
+        <select id="categorySelect">
+          <option value="any">Any Category</option>
+          <option value="general">General</option>
+          <option value="programming">Programming</option>
+          <option value="knock-knock">Knock-Knock</option>
+        </select>
+        <button id="getCategoryBtn" class="btn btn-secondary">Get Joke by Category</button>
+      </div>
+    </div>
+
+    <div id="jokeContainer" class="joke-container hidden">
+      <div class="joke-card">
+        <div id="jokeContent" class="joke-content">
+          <!-- Joke will be displayed here -->
+        </div>
+        <div class="joke-footer">
+          <span id="jokeCategory" class="category-tag"></span>
+          <button id="copyBtn" class="btn btn-small">📋 Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="loadingSpinner" class="spinner hidden"></div>
+    <div id="errorMessage" class="error-message hidden"></div>
+    <div id="successMessage" class="success-message hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
