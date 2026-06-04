@@ -15,7 +15,7 @@ let currentJoke = null;
 let currentCategory = null;
 
 // Event Listeners
-generateBt n.addEventListener('click', () => fetchJoke('/api/joke'));
+generateBtn.addEventListener('click', () => fetchJoke('/api/joke'));
 getCategoryBtn.addEventListener('click', () => {
   const category = categorySelect.value;
   if (category === 'any') {
